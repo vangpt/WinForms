@@ -1,0 +1,11 @@
+D:\Documents\C#\NSSP\bin\Debug\NSSP.exe.config
+D:\Documents\C#\NSSP\bin\Debug\NSSP.exe
+D:\Documents\C#\NSSP\bin\Debug\NSSP.pdb
+D:\Documents\C#\NSSP\obj\Debug\NSSP.csprojAssemblyReference.cache
+D:\Documents\C#\NSSP\obj\Debug\NSSP.Properties.Resources.resources
+D:\Documents\C#\NSSP\obj\Debug\NSSP.View.TheLoai.resources
+D:\Documents\C#\NSSP\obj\Debug\NSSP.csproj.GenerateResource.cache
+D:\Documents\C#\NSSP\obj\Debug\NSSP.csproj.CoreCompileInputs.cache
+D:\Documents\C#\NSSP\obj\Debug\NSSP.exe
+D:\Documents\C#\NSSP\obj\Debug\NSSP.pdb
+D:\Documents\C#\NSSP\obj\Debug\NSSP.Form1.resources
