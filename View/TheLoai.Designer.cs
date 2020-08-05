@@ -31,70 +31,79 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.dtgTheLoai = new System.Windows.Forms.DataGridView();
             this.MATHELOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TENTHELOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtTenTheLoai = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtMaTheLoai = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTheLoai)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(310, 30);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(336, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(104, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thể Loại";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 90);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(218, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.Size = new System.Drawing.Size(88, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Thể Loại";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(378, 78);
+            this.btnAdd.Location = new System.Drawing.Point(225, 180);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 29);
-            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Size = new System.Drawing.Size(71, 37);
+            this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnEdit
             // 
-            this.button2.Location = new System.Drawing.Point(490, 78);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 29);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEdit.Enabled = false;
+            this.btnEdit.Location = new System.Drawing.Point(341, 180);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(71, 37);
+            this.btnEdit.TabIndex = 3;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(582, 78);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 29);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Enabled = false;
+            this.btnDelete.Location = new System.Drawing.Point(457, 180);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(71, 37);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button4
+            // btnReset
             // 
-            this.button4.Location = new System.Drawing.Point(673, 78);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 29);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnReset.Location = new System.Drawing.Point(573, 180);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(71, 37);
+            this.btnReset.TabIndex = 5;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // dtgTheLoai
             // 
@@ -126,25 +135,46 @@
             // txtTenTheLoai
             // 
             this.txtTenTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenTheLoai.Location = new System.Drawing.Point(164, 78);
+            this.txtTenTheLoai.Location = new System.Drawing.Point(341, 118);
             this.txtTenTheLoai.Name = "txtTenTheLoai";
             this.txtTenTheLoai.Size = new System.Drawing.Size(140, 29);
-            this.txtTenTheLoai.TabIndex = 7;
+            this.txtTenTheLoai.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(218, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 16);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Mã Thể Loại";
+            // 
+            // txtMaTheLoai
+            // 
+            this.txtMaTheLoai.Location = new System.Drawing.Point(341, 65);
+            this.txtMaTheLoai.Multiline = true;
+            this.txtMaTheLoai.Name = "txtMaTheLoai";
+            this.txtMaTheLoai.Size = new System.Drawing.Size(140, 28);
+            this.txtMaTheLoai.TabIndex = 0;
             // 
             // TheLoai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(774, 450);
+            this.Controls.Add(this.txtMaTheLoai);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTenTheLoai);
             this.Controls.Add(this.dtgTheLoai);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "TheLoai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TheLoai";
             this.Load += new System.EventHandler(this.TheLoai_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgTheLoai)).EndInit();
@@ -158,12 +188,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.DataGridView dtgTheLoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn MATHELOAI;
         private System.Windows.Forms.DataGridViewTextBoxColumn TENTHELOAI;
         private System.Windows.Forms.TextBox txtTenTheLoai;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtMaTheLoai;
     }
 }
